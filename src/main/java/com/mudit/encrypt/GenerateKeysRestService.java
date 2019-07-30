@@ -11,8 +11,7 @@ public class GenerateKeysRestService {
     @RequestMapping(value = "/generateKeys", method = RequestMethod.GET)
     public String generateKeys(@RequestParam(value = "onePassword") String onePassword){
 
-        String encryptedTextFromFile = new String(FileWrite.readFile("stored.txt")) ;
-        String decryptedText = Decryption.decryptPassword(onePassword, encryptedTextFromFile);
-        return decryptedText;
+        GenerateKeys.generateKeys(onePassword);
+        return "Success";
     }
 }
