@@ -1,5 +1,7 @@
 package com.mudit.api.Decryption;
 
+import com.mudit.api.Helper.Response;
+
 public interface DecryptService {
-    String decryptPassword(String onePassword, String serviceName);
+    Response decryptPassword(String onePassword, String serviceName);
 }

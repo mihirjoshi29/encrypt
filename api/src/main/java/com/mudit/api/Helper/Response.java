@@ -9,6 +9,8 @@ public class Response {
 
     private String errorMessage;
 
+    private String data;
+
     public Status getStatus() {
         return status;
     }
@@ -31,5 +33,13 @@ public class Response {
 
     public void setErrorMessage(String errorMessage) {
         this.errorMessage = errorMessage;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
     }
 }
