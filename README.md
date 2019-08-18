@@ -17,9 +17,11 @@ http://localhost:8080/generateKeys?onePassword=master_password
 
 to encrypt enter service name and password for that service in te url:  
 http://localhost:8080/encrypt?serviceName=service_name&password=service_password  
+expected response:  {"status":"SUCCESS","statusCode":200,"errorMessage":null,"data":null}  
 
 to decrypt enter the service name and master_password:  
 http://localhost:8080/decrypt?onePassword=master_password&serviceName=service_name
+expected response:  {"status":"SUCCESS","statusCode":200,"errorMessage":null,"data":"service_password"}  
 
 # Portability
 once storage.json file is encrypted the file can be copy pasted alond with the hash encrypted private key file and then can be used on any machine
