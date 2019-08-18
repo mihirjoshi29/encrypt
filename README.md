@@ -15,7 +15,7 @@ Maven
 start with key generation using a master_password by using the url:  
 http://localhost:8080/generateKeys?onePassword=master_password
 
-to encrypt enter service name and password for that service in te url:  
+to encrypt enter service name and password for that service in te url (service_name eg: amazon,flipkart):  
 http://localhost:8080/encrypt?serviceName=service_name&password=service_password  
 expected response:  {"status":"SUCCESS","statusCode":200,"errorMessage":null,"data":null}  
 
