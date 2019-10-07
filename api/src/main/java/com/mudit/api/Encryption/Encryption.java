@@ -28,7 +28,7 @@ public class Encryption {
             encryptedText = Base64.getEncoder().encodeToString(cipher.doFinal(plaintextPassword.getBytes(StandardCharsets.UTF_8)));
 
         } catch (Exception e){
-            System.out.println("exception during encryption cipher");
+            System.out.println("Exception during encryption cipher " + e);
         }
 
         return encryptedText;
